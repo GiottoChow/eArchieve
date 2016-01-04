@@ -1,0 +1,4 @@
+activeProfiles=openshift, com-springsource-repository-bundles-external, com-springsource-repository-bundles-release, java-net-public, repository-apache-org, jboss-earlyaccess-repository, jboss-ga-repository, M2, jboss-public-repository, slf4j
+eclipse.preferences.version=1
+resolveWorkspaceProjects=true
+version=1
