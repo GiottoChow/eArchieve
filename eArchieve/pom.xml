@@ -22,13 +22,17 @@
 		<java.version>1.6</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+		
+		<ejb.version>3.2</ejb.version>
+		<cdi.version>1.2</cdi.version>
+		<annotation.version>1.2</annotation.version>
 		<jsp.version>2.2</jsp.version>
 		<jstl.version>1.2</jstl.version>
 		<servlet.version>2.5</servlet.version>
 		<spring-framework.version>4.2.4.RELEASE</spring-framework.version>
 		<aspectj-version>1.6.10</aspectj-version>
 		<inject-version>1</inject-version>
+		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
 		<hibernate.version>4.2.1.Final</hibernate.version>
 		<logback.version>1.0.13</logback.version>
 		<slf4j.version>1.7.5</slf4j.version>
@@ -38,7 +42,23 @@
 		<gson.version>1.7.1</gson.version>
 	</properties>
 
+	
 	<dependencies>
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>javax.ejb-api</artifactId>
+			<version>${ejb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>${cdi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>${annotation.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
@@ -97,6 +117,11 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -158,4 +183,5 @@
 	  </plugin> 
 	 </plugins> 
 	</build> 
+	
 </project>
